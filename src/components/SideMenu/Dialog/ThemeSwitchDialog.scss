@@ -1,0 +1,31 @@
+.switch-theme-dialog-container {}
+
+.switch-theme-separator {
+    margin: 1.2rem 0 .4rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--surface-border);
+}
+
+.select-theme-button {
+    padding: .6rem;
+
+    .pi,
+    img {
+        height: 1.7rem;
+    }
+}
+
+.switch-theme-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    .p-button {
+        justify-content: center;
+        align-items: center;
+    }
+    > span {
+        color: var(--text-color-secondary);
+        font-size: .7rem;
+    }
+}

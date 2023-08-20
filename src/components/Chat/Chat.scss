@@ -1,0 +1,30 @@
+.side-menu-on {
+    .chat-container {
+        padding: var(--horizontal-menu-height) 0 0 var(--side-menu-width);
+    }
+}
+
+.chat-container {
+    min-height: 100vh;
+    margin: 0;
+    padding: var(--horizontal-menu-height) 0 0 0;
+    transition: padding .4s ease-in-out;
+}
+
+.chat-rooms-holder {
+    width: 193px;
+    border-top: 1px solid var(--surface-border);
+    border-left: 1px solid var(--surface-border);
+}
+
+.chat-users-holder {
+    border-top: 1px solid var(--surface-border);
+    width: 263px;
+}
+
+.chat-messages-holder {
+    padding: 0;
+    border-top: 1px solid var(--surface-border);
+    border-left: 1px solid var(--surface-border);
+    border-right: 1px solid var(--surface-border);
+}

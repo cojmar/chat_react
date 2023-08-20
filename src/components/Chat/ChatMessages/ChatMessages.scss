@@ -1,0 +1,96 @@
+//$sendMessageHeight: calc(47px + (.6rem * 2));
+
+.chat-messages-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    // TODO filter pseudo
+    //padding-bottom: $sendMessageHeight;
+}
+
+.send-message-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    > [class*="p-input"],
+    .p-inputtext {
+        width: 100%;
+        padding-left: 49px;
+    }
+}
+
+.send-message-bg-effect {
+    position: relative;
+    padding: .6rem;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color-text);
+        filter: blur(9px);
+        z-index: -1;
+    }
+}
+
+.message-input-container {
+    position: relative;
+}
+
+.message-avatar {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: var(--text-color-secondary);
+    z-index: 1;
+}
+
+.send-message-button.p-button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .p-button-icon {
+        font-size: 1.2rem;
+    }
+}
+
+.message-list {
+    //max-height: calc(100vh - 129px);
+    max-height: calc(100vh - (var(--horizontal-menu-height)));
+    overflow-y: auto;
+}
+
+.message-item {
+    margin: 0;
+}
+
+.message-timestamp {
+    width: 93px;
+    text-align: right;
+}
+
+.message-username {
+    width: 123px;
+
+    &.is-logged-in-user {
+        color: var(--primary-color);
+    }
+}
+
+.message {}

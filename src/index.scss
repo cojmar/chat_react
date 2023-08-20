@@ -1,0 +1,15 @@
+:root {
+    --secondary-color: #64748B;
+    --success-color: #22C55E;
+    --info-color: #3B82F6;
+    --warning-color: #F59E0B;
+    --help-color: #A855F7;
+    --danger-color: #EF4444;
+
+    --side-menu-width: 56px;
+    --horizontal-menu-height: 56px;
+}
+
+body {
+    font-family: var(--font-family);
+}

@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.p-inputtext,
+.p-dialog-header-close,
+.p-button {
+    flex-shrink: 0;
+
+    &:focus,
+    &:enabled:focus {
+        box-shadow: none !important;
+    }
+}
